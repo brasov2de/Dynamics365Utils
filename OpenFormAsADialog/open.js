@@ -4,7 +4,7 @@ Xrm.Navigation.navigateTo(
     {
         pageType: "entityrecord", 
         entityName: "orb_dialog", //entity where the form for dialog was customized
-        createdFromEntity: { 
+        createFromEntity: { 
             entityType: "orb_testentity", 
             id: Xrm.Page.data.entity.getId(), 
             name: "dummy"
