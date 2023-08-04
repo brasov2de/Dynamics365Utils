@@ -3,8 +3,10 @@
 async function Dianamics_OpenTheRecordSidePane(executionContext){
     const paneId = "diana_OppPosYearSidePane";
     const formContext = executionContext.getFormContext();
-    const  entityName = formContext.data.entity.getEntityName();
-    const recordId = formContext.data.entity.getId();
+    const entityName= formContext.data.entity.getEntityName();
+    const recordId = formContext.data.entity.getId(); 
+    //const  entityName = executionContext.getEventSource().getEntityName();
+    //const recordId = executionContext.getEventSource().getId(); 
     if(recordId==null){
         return;
     }    
